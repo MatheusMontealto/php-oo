@@ -1,10 +1,15 @@
 <?php
 
 require 'classes/produto.php';
-require 'model/produto.php';
+require 'models/produto.php';
 
-$produto = new \classes\Produto();
+use models\Produto as productModel;
+use classes\Produto as productClass;
+
+$produto = new productModel();
 $produto->mostrarDetalhes();
 
-$produto = new \models\Produto();
-$produto->mostrarDetalhes();
+echo "<br></br>";
+
+$produto2 = new productClass();
+$produto2->mostrarDetalhes();
