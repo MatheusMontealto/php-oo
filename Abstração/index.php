@@ -13,7 +13,7 @@ abstract class Banco {                       // Classe abstrata que serve como m
         return $this->saldo;
     }
 
-    abstract protected function Sacar($s);                  // Métodos abstratos que são obrigatórios para se instaciar a classe.                                              
+    abstract protected function Sacar($s);                  // Métodos abstratos que são obrigatórios para se instanciar a classe.                                              
     abstract protected function Depositar($d);
 
 }
